@@ -5,7 +5,7 @@ def promedio( self, lat, lon, servicios = "noaa,accuweather,weatherdotcom" ):
     suma = 0
     n = 0
     from promedio.conectores import noaa, accuweather, weatherdotcom
-    for servicio in [x.strip() for x in servicios.split(',')]:
+    for servicio in set([x.strip() for x in servicios.split(',')]):
         if( servicio == "accuweather"):
             n = n + 1
             suma = suma + accuweather( lat=lat, lon=lon )
