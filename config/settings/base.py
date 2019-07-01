@@ -77,7 +77,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "clima.users.apps.UsersConfig",
     # Your stuff: custom apps go here
-    "clima.promedio.apps.PromedioConfig",
+    "clima.prom.apps.PromConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

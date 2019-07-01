@@ -4,7 +4,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
-from clima.promedio import views
+from clima.prom import views
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -17,8 +17,8 @@ urlpatterns = [
     path("users/", include("clima.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path('promedio/<str:lat>/<str:lon>/<str:servicios>', views.promedio, name='promedio' ),
-    path('promedio/<str:lat>/<str:lon>', views.promedio, name='promedio' ),
+    path('prom/<str:lat>/<str:lon>/<str:servicios>', views.prom, name='prom' ),
+    path('prom/<str:lat>/<str:lon>', views.prom, name='prom' ),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

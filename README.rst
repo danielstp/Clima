@@ -1,7 +1,7 @@
-Clima
-=====
+Weather
+=======
 
-Ejemplo de Django para manejo de servicios de clima
+Django example for climate service management
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -12,7 +12,6 @@ Ejemplo de Django para manejo de servicios de clima
 
 
 :License: GPLv3
-
 
 Settings
 --------
